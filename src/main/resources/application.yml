@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: candidate-management-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/candidatedb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: Dreamlover#02
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        # Hibernate 6 automatically detects MySQL dialect
+        dialect: org.hibernate.dialect.MySQLDialect
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    root: INFO
+    com.recruitcrm.candidate_service: DEBUG
+    org.hibernate.SQL: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
