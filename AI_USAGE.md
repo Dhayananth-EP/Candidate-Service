@@ -11,7 +11,7 @@ AI assistance was utilized as a technical pair programmer across the following a
 
 ## 2. How AI Output Was Validated
 Every piece of AI-generated output was reviewed, tested, and validated through multiple checkpoints:
-1. **Compilation & Static Typing Checks:** Verified that code complied with Java 17 and Spring Boot 3 standards without deprecated classes.
+1. **Compilation & Static Typing Checks:** Verified that code complied with Java 21 and Spring Boot 4 standards without deprecated classes.
 2. **Automated Unit & Web Tests:** Ran `./mvnw clean test` to confirm all mock interactions, status codes, and JSON assertions passed without errors.
 3. **Manual Functional Testing via Postman & Swagger UI:** Tested live boundary inputs (negative experience, duplicate emails, invalid UUIDs, whitespace inputs).
 4. **Container Health Verification:** Ran `docker compose up --build` to confirm the application waited for MySQL health checks before initializing Hibernate.
