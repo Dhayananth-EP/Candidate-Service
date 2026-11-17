@@ -1,6 +1,6 @@
 # Candidate Management Service
 
-A RESTful API built using **Java 21, Spring Boot 3, and MySQL** for managing, searching, and filtering candidate profiles.
+A RESTful API built using **Java 21, Spring Boot 4, and MySQL** for managing, searching, and filtering candidate profiles.
 
 The application supports candidate CRUD operations, pagination, sorting, filtering, and centralized exception handling.
 
